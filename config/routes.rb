@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get "courses/new" => "courses#new", as: :new_course
   get "courses/:id" => "courses#show", as: :course
   post "courses/" => "courses#create"
+  get "courses/:id/edit" => "courses#edit", as: :edit_course
+  patch "courses/:id" => "courses#update"
+  delete "courses/:id" => "courses#destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

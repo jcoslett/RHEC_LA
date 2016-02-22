@@ -3,3 +3,4 @@
 <p>This course is called <%= @course.name %> and is in the category <%= @course.category %></p>
 
 <%= link_to "Back to the list!", courses_path %>
+<%= link_to "Delete this course!", courses_path, method: :delete, data: { confirm: "Are you sure you want to delete this course?"} %>
