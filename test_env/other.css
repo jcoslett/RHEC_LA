@@ -1,0 +1,21 @@
+.header-img {
+max-width: 25px;
+max-height: 25px;
+margin: 12.5px;
+}
+
+.footer-img {
+max-width: 50px;
+max-height: 50px;
+margin: 12.5px 12.5px 0px 12.5px;
+}
+
+.navbar {
+  color: white !important;
+}
+
+#top-navbar{
+  background-color: rgb(34,183,205);
+  color: white !important;
+}
+
