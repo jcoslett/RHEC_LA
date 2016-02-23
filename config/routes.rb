@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
 
+  get 'home', :to => "static#index"
+  root :to => "static#index"
+
+
+  resources :users, only: [:new, :create]
+
+  # Create a better looking URL for logging in
+  resources :sessions, only: [:new, :create, :destroy]
+  get '/login', to: 'sessions#new'
+
+resources :users, only: [:new, :create]
 
   get "courses/" => "courses#index"
   get "courses/new" => "courses#new", as: :new_course
@@ -10,9 +21,8 @@ Rails.application.routes.draw do
   delete "courses/:id" => "courses#destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+end
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -62,4 +72,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+

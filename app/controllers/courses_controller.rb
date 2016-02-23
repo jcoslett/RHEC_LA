@@ -1,5 +1,9 @@
 class CoursesController < ApplicationController
 
+  before_action :set_course, only: [:show, :edit, :update, :destroy]
+  #  add the line below
+  before_action :authorize, except: [:index, :show]
+
   def index
     @courses = Course.all
   end
