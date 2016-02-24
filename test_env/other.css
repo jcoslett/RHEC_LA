@@ -1,3 +1,7 @@
+body {
+  font-family: Tahoma;
+}
+
 .header-img {
 max-width: 25px;
 max-height: 25px;
@@ -22,4 +26,9 @@ margin: 12.5px 12.5px 0px 12.5px;
 
 div.panel-body {
   background-color: rgb(34,183,205);
+}
+
+#climbandform {
+  background-image: url('http://www.rainbowhouseclub.com/Imgs/2/635837054012292903_index1.jpg');
+  background-size:100% auto;
 }
