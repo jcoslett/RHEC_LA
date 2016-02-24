@@ -17,6 +17,7 @@ class UsersController < ApplicationController
   private
     # Implement Strong Params
     def user_params
-      params.require(:user).permit(:name, :email, :wechat, :password, :password_confirmation)
+      params.require(:user).permit(:name, :email, :wechat, :tutor,
+                                   :password, :password_confirmation)
     end
 end

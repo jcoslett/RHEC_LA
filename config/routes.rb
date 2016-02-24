@@ -1,24 +1,26 @@
 Rails.application.routes.draw do
 
-  get 'home', :to => "static#index"
-  root :to => "static#index"
+  get 'home', to: "static#index"
+  root to: "static#index"
+  get '/login', to: 'sessions#new'
 
 
   resources :users, only: [:new, :create]
 
   # Create a better looking URL for logging in
   resources :sessions, only: [:new, :create, :destroy]
-  get '/login', to: 'sessions#new'
 
-resources :users, only: [:new, :create]
+# resources :users, only: [:new, :create]
 
-  get "courses/" => "courses#index"
-  get "courses/new" => "courses#new", as: :new_course
-  get "courses/:id" => "courses#show", as: :course
-  post "courses/" => "courses#create"
-  get "courses/:id/edit" => "courses#edit", as: :edit_course
-  patch "courses/:id" => "courses#update"
-  delete "courses/:id" => "courses#destroy"
+  # get "courses/" => "courses#index"
+  # get "courses/new" => "courses#new", as: :new_course
+  # get "courses/:id" => "courses#show", as: :course
+  # post "courses/" => "courses#create"
+  # get "courses/:id/edit" => "courses#edit", as: :edit_course
+  # patch "courses/:id" => "courses#update"
+  # delete "courses/:id" => "courses#destroy"
+
+  resources :courses
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 end
