@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
 
-  get 'home', to: "static#index"
-  root to: "static#index"
+  root "static#index"
   get '/login', to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
 
 
   resources :users, only: [:new, :create]
 
   # Create a better looking URL for logging in
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: [:create]
 
 # resources :users, only: [:new, :create]
 
