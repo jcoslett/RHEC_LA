@@ -36,3 +36,20 @@ div.panel-body {
 .form-group {
   text-align:center;
 }
+
+.intro-text {
+  color: rgb(237,77,123);
+  vertical-align: middle;
+}
+
+.intro-text>h1 {
+  font-size: 80px;
+}
+
+.intro-text>h2 {
+  font-size:50px;
+}
+
+.intro-text>p {
+  font-size: 30px;
+}
