@@ -30,7 +30,7 @@ Because of bootstrap, users can visit the website on both desktop and mobile dev
 
 The main problem encountered is age-old: how to put a "store" in the best possible position to get a customer to purchase a good or service. At present, the website does not give the impression that the school is a well-established, well-capitalized institution likely to improve one's English skills. 
 
-It is hoped that more features will make
+It is hoped that more features and better styling will help solve this problem.
 
 ### Next Steps
 
