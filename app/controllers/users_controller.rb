@@ -8,10 +8,21 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       flash[:notice] = "You have successfully signed up!"
-      redirect_to root_path
+      redirect_to welcome_path
     else
       render 'new'
     end
+  end
+
+  def welcome
+    @courses = Course.all
+  end
+
+
+  def pick_course
+    current_user.course_id = params[:id]
+    current_user.save
+    redirect_to user_path(current_user)
   end
 
   private

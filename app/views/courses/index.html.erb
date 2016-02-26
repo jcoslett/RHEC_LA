@@ -3,7 +3,8 @@
 <ul>
     <% @courses.each do |course| %>
         <li>
-            <strong> <%= course.name %> </strong> - <%= course.category %>
+            <span><strong> <%= course.name %> </strong> - <%= course.category %></span>
+            <%= link_to "See more...", course_path(course.id) %>
         </li>
     <% end %>
 </ul>

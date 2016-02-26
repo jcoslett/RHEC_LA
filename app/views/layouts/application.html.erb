@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RHECLa</title>
+  <title>Welcome to Rainbow House Los Angeles!</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -14,8 +14,8 @@
     <div class="navbar-header">
     </div>
       <ul class="nav navbar-nav navbar-left">
-        <li><img src="l_logo.png"></img></li>
-        <li><img src="rainbowlogo.png" style="height: 50px; width: 50px auto;"></li>
+        <li><a href="http://imgur.com/sQW2IGL"><img src="http://i.imgur.com/sQW2IGL.png" title="source: imgur.com" /></a></li>
+        <li><a href="http://imgur.com/86Oqp9J"><img src="http://i.imgur.com/86Oqp9J.png" title="source: imgur.com" style="height: 50px; width: 50px auto;"></a></li>
       </ul>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,13 +25,13 @@
         <li><a href="#">Campus</a></li>
         <li><a href="#">About Rainbow House</a></li>
         <% if current_user %>
-        <li><%= link_to 'Logout', logout_path, method: :delete %></li>
+        <li><%= link_to 'Logout', logout_path %></li>
         <% else %>
         <li><%= link_to 'Login', login_path %></li>
         <li><%= link_to 'Sign Up', new_user_path %></li>
         <% end %>
-        <li><img class="header-img" src="weibo.png"></li>
-        <li><img class="header-img" src="weichat.png"></li>
+        <li><a href="http://imgur.com/XPwfbiO"><img src="http://i.imgur.com/XPwfbiO.png" class= "header-img" title="source: imgur.com" /></a></li>
+        <li><a href="http://imgur.com/k1wPDHe"><img src="http://i.imgur.com/k1wPDHe.png" class="header-img" title="source: imgur.com" /></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
 <!-- /.container-fluid -->

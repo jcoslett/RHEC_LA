@@ -1,0 +1,4 @@
+<h1>Welcome! <%= current_user.name %></h1>
+<% @courses.each do |c| %>
+  <p><%= link_to c.name, pick_course_path(c) %></p>
+<% end %>
