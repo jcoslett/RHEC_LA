@@ -1,6 +1,7 @@
 #Rainbow House English Club - Los Angeles
 
-#### Grand Opening! [link.](https://rocky-garden-94800.herokuapp.com/)
+#### Grand Opening! [Come on in!](https://rocky-garden-94800.herokuapp.com/)
+#### Kinda random but here's the [Trello!](https://trello.com/b/4Tutn2fH/rainbow-house-english-club-la)
 
 ### General Description
 Rainbow House English Club is a highly enriching language school with 5 locations in Beijing, China. The present website might form the basis for a future business proposition to open Rainbow's first North American location in Los Angeles. 
