@@ -1,5 +1,5 @@
 <h1>Welcome, <%= current_user.name %>!</h1>
 <p>Which class would you like to attend this week?</p>
 <% @courses.each do |c| %>
-  <p><%= link_to c.name, pick_course_path(c) %></p>
+  <p><%= link_to c.descriptions, pick_course_path(c) %></p>
 <% end %>
