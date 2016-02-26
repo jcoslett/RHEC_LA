@@ -1,62 +1,69 @@
-// Place all the styles related to the Static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
-  font-family: Tahoma;
+  font-family: Tahoma; //sets a standard font
 }
 
 .header-img {
 max-width: 25px;
-max-height: 25px;
+max-height: 25px;  //governs the social media logos
 margin: 12.5px;
 }
 
 .footer-img {
 max-width: 50px;
-max-height: 50px;
+max-height: 50px; //governs the main logo with the aim of setting the navbar height thereby
 margin: 12.5px 12.5px 0px 12.5px;
 }
 
 
 #top-navbar{
-  background-color: rgb(34,183,205);
+  background-color: rgb(34,183,205); // navbar background color (tealish blue)
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a { // overrides default bootstrap grey for legibility
   color: white;
   font-size: 16px;
 }
 
-div.panel-body {
+div.panel-body { //governs styling for the button telling what the signup form is about
   background-color: rgb(237, 77, 123);
 }
 
-#climbandform {
+#climbandform { // background image towards top of page
   background-image: url('http://www.rainbowhouseclub.com/Imgs/2/635837054012292903_index1.jpg');
   background-size:100% auto;
 }
 
-.form-group {
+#palmsandcarousel { // background image in second section
+  background-image: url('http://i.imgur.com/FcTtNhg.jpg');
+  background-size:100% auto;
+}
+
+.form-group { //probably vestigial but I'm afraid to take it out
   text-align:center;
 }
 
-.intro-text {
+.intro-text { // makes big simple text pink for contrast
   color: rgb(237,77,123);
   vertical-align: middle;
 }
 
-.intro-text>h1 {
+.intro-text>h1 { //big simple text component styling
   font-size: 80px;
 }
 
-.intro-text>h2 {
+.intro-text>h2 {//big simple text component styling
   font-size:50px;
 }
 
-.intro-text>p {
-  font-size: 30px;
+.intro-text>h3 {//big simple text component styling
+  font-size: 50px;
 }
 
-form.signupform{
+form.signupform{ //might affect the form width at some point
   width:100%;
+}
+
+.legible-color-black {
+  color: black;
 }
