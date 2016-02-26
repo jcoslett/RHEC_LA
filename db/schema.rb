@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160225223509) do
+ActiveRecord::Schema.define(version: 20160226020020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,9 +19,10 @@ ActiveRecord::Schema.define(version: 20160225223509) do
   create_table "courses", force: :cascade do |t|
     t.string   "category"
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.integer  "user_id"
+    t.text     "descriptions"
   end
 
   add_index "courses", ["user_id"], name: "index_courses_on_user_id", using: :btree
